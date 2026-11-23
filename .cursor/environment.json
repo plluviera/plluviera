@@ -1,0 +1,12 @@
+{
+  "name": "plluviera",
+  "user": "ubuntu",
+  "install": "[ ! -d '/agent/repos/plluviera' ] || cd '/agent/repos/plluviera' || exit $?\nbash .cursor/cloud-agent-install.sh",
+  "start": "[ ! -d '/agent/repos/plluviera' ] || cd '/agent/repos/plluviera' || exit $?\nbash .cursor/cloud-agent-start.sh",
+  "ports": [
+    { "name": "hola-1a", "port": 5173 },
+    { "name": "nst-web", "port": 4173 },
+    { "name": "carlamedina-ar", "port": 4174 }
+  ],
+  "chromeExecutablePath": "/usr/local/bin/google-chrome"
+}
